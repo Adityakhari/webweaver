@@ -1,11 +1,29 @@
 <om shri ganeshay namah:></om>
 <html>
-<head>
-    <title>
-        eSpice Sucks!!!!
-    </title>
-    <body>
-    
-    </body>
+    <head>
+        <title>eSpice</title>
+        <link rel="stylesheet" type = "text/css" href="style.css">
     </head>
-</html>
+<body>
+    <div class="topnav" id="myTopnav">
+      <img src="full logo.png" width="300px" style="padding:10px;">
+        <a href="#" class="left">Contact</a>
+        <a href="#" class="left">Faculty</a>
+        <a href="#"class="left">Alumni</a>
+      <a href="#"class="left">Members</a>
+      <a href="#"class="left">Resources</a>
+      <a href="#" class="left">Home</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <script>
+         function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+         }
+    </script>
+    </body>
+    </html>
