@@ -82,7 +82,7 @@ body {
     
 }
 .picture{
-    width: 100%;
+    width: auto;
     height: 97%;
     margin-top: 30px;
 }
