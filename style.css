@@ -114,6 +114,7 @@ html{
     display: flex;
     margin-top: 70px;
  width: 100%;
+    margin-bottom: 50px;
 }
 .field img{
         padding-right: 40px;
