@@ -82,8 +82,8 @@ body {
     
 }
 .picture{
-    width: auto;
-    height: 97%;
+    width: 100%;
+    height: auto;
     margin-top: 30px;
 }
  
