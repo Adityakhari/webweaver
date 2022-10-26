@@ -18,6 +18,18 @@
       <a href="#" class="left">Home</a></b>
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+
+    <script>
+      function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+ x.className += " responsive";
+} else {
+ x.className = "topnav";
+}
+      }
+ </script>
+ 
     <div> 
     <img src="Chapter%201%20The%20Unknown.png" class="picture" >
     </div>
@@ -53,15 +65,6 @@
         <img src="motion.png" class="mot">
         <img src="space.png">
     </div>
-    <script>
-         function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-         }
-    </script>
+
     </body>
     </html>
