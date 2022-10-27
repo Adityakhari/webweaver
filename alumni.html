@@ -6,34 +6,90 @@
 <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=DynaPuff:wght@500&family=Sacramento&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     </head>
 <body>
+
+    <div class="topnav" id="myTopnav">
+        <img src="full logo.png" width="300px" style="padding:10px;">
+         <b> <a href="contact.html" class="left">Contact</a>
+          <a href="alumni.html"class="left">Alumni</a>
+        <a href="members/html"class="left">Members</a>
+        <a href="index.html" class="left">Home</a></b>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+  
+      <script>
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+   x.className += " responsive";
+  } else {
+   x.className = "topnav";
+  }
+        }
+   </script>
+
+
     <center> 
     <h1 class="alum">Alumni</h1>
         <h1 class="dropped"> Warriors Who Left The Field But Never Dropped Their Weapons</h1>
-        <div>
-        <h1 class="ho">2018-2019</h1>
-            <img src="2018.jpg" class="seven">
-        </div>
-                <div>
-        <h1 class="ho">2019-2020</h1>
-            <img src="2019.jpg" class="seven">
-        </div>
-                <div>
-        <h1 class="ho">2021-2022</h1>
-            <img src="2021.jpg" class="seven">
-        </div>
+        
     </center>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          
+          <img src="2018.jpg" style="width:100%">
+          <div class="text">2018-2019</div>
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="2019.jpg" style="width:100%">
+          <div class="text">2019-2020</div>
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="2021.jpg" style="width:100%">
+          <div class="text">2020-2021</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          
+        }
+        </script>
     </body>
 </html>
 <style>
-    .ho{
-        color: white;
-        margin-top: 80px;
-    }
-    .seven{
-        width: 700px;
-        height: 500px;
-        margin-bottom: 70px;
-    }
     *{
         background-color: black;
         font-family: 'Ubuntu' , cursive;
@@ -41,12 +97,71 @@
     
     .alum{
         color:  #098cd9;
-        font-size: 34;
-        margin-top: 20px;
+        font-size: 39;
+        margin-top: 60px;
     }
     .dropped{
         color: white;
         font-size: 31;
-        margin-top: 8px;
+        margin-top: 15px;
+        margin-bottom: 50px;
     }
+
+    * {box-sizing: border-box}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 18px;
+  padding: 15px 12px;
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  text-align: center;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 </style>
