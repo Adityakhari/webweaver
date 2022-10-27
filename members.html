@@ -7,6 +7,27 @@
         
     </head>
 <body>
+
+    <div class="topnav" id="myTopnav">
+        <img src="full logo.png" width="300px" style="padding:10px;">
+         <b> <a href="contact.html" class="left">Contact</a>
+          <a href="alumni.html"class="left">Alumni</a>
+        <a href="members/html"class="left">Members</a>
+        <a href="index.html" class="left">Home</a></b>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+  
+      <script>
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+   x.className += " responsive";
+  } else {
+   x.className = "topnav";
+  }
+        }
+   </script>
+
     <center> 
     <div> 
     <h1 class="mem">
@@ -15,25 +36,25 @@
         <h1 class="ppl">People Who Make Us Special</h1>
     </div>
     </center>
-    <div class="pic1">
-    <img src="arnav.png">
-    <img src="kenia.png">
-    <img src="dhaka.png">
-    <img src="shourya.png">
-    <img src="yash.png">
+    <div class="grid">
+    <div><img src="arnav.png"></div>
+    <div><img src="kenia.png"></div>
+   <div><img src="dhaka.png"></div>
+    <div><img src="shourya.png"></div>
+   <div><img src="yash.png">
     </div>
-    <div class="pic2">
-    <img src="Manya.png">
-        <img src="Manya%20(1).png">
-        <img src="kania.png">
-    </div>
+    <div>
+    <img src="Manya.png"></div>
+        <div><img src="Manya%20(1).png"></div>
+       <div><img src="kania.png">
+    </div></div>
     </body>
     <style>
         *{
             background-color: black;
         }
         .ppl{
-            margin-top: 4px;
+            margin-top: 20px;
             color: white;
             font-family: 'Ubuntu' , cursive;
             font-size: 31;
@@ -43,7 +64,7 @@
             color: #098cd9;
             font-size: 34;
             font-family: 'Ubuntu' , cursive;
-            margin-top: 20px;
+            margin-top: 60px;
         }
     </style>
 </html>
