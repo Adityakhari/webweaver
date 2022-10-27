@@ -130,7 +130,13 @@ a.left:hover:before {
   margin-top: 400px;
 }
   
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
  
+
 .hemlo{
   color: white;
   font-family:  'Aboreto', cursive;
