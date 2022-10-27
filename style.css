@@ -80,26 +80,19 @@ body {
     margin-top: 120px;
     margin-left: 30px;
 }
-.fields{
-    margin-top: 90px;
-    justify-content: center;
-    display: flex;
-    width: 100%
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+  grid-gap:80px;
+  padding-left:40px;
+  padding-right: 40px;
 }
-.fields img{
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.field{
-    justify-content: center;
-    display: flex;
-    margin-top: 70px;
- width: 100%;
-}
-.field img{
-        padding-right: 40px;
-    padding-left: 40px;
-
+.grid > div{
+  padding-left: 20px;
+  width: 400px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  
 }
 .ncr{
     color: white;
