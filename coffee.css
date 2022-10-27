@@ -12,57 +12,6 @@ body{
     margin: 0%;
     
 }
-.topnav {
-    padding-top: 0px;
-    overflow: hidden;
-    background-color: transparent;
-    margin: 0px;
-    float: right;
-    padding-bottom: 0px;
-    
-  }
-  
-  .topnav a {
-    float: right;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 16px 30px;
-    text-decoration: none;
-    font-size: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
-  
-  .left {
-    color: #f2f2f2;
-    font-size: 31px;
-    margin-top: 10px;
-    position: relative;
-  }
-
-a:hover{
-  color:#ffcb90;
-}
-
-a.left:before {
-  content: "";
-  position: absolute;
-  width: 19px;
-  height: 3px;
- 
-  bottom: 0;
-  left: 14.2px;
-  background-color: white;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-  margin-bottom: 13px;
-}
-
-a.left:hover:before {
-  visibility: visible;
-  width: 75%;
-  align-items: center;
-}
 
   .logo{
     width: 350px;
