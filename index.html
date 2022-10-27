@@ -1,24 +1,33 @@
 <html>
     <head>
         <title>eSpice</title>
-        <link rel="icon" type="image/png" href="full%logo.png.png">
         <link rel="stylesheet" type = "text/css" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=DynaPuff:wght@500&family=Sacramento&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-        
+<script src="https://unpkg.com/feather-icons"></script> 
     </head>
 <body>
     <div class="topnav" id="myTopnav">
       <img src="full logo.png" width="300px" style="padding:10px;">
-       <b> <a href="contact.html" class="left">Contact</a>
- 
-        <a href="alumni.html" class="left">Alumni</a>
-      <a href="members.html" class="left">Members</a>
-       
+       <b> <a href="#" class="left">Contact</a>
+        <a href="#"class="left">Alumni</a>
+      <a href="#"class="left">Members</a>
       <a href="#" class="left">Home</a></b>
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+
+    <script>
+      function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+ x.className += " responsive";
+} else {
+ x.className = "topnav";
+}
+      }
+ </script>
+
     <div> 
     <img src="Chapter%201%20The%20Unknown.png" class="picture" >
     </div>
@@ -28,45 +37,64 @@
     <h1 class="hemlo">Hi! We are eSpice the tech club of <br>Delhi Public School, Noida</h1>
     </div>
         <div class="arrow">
- <a href="#mirch">    <span></span>
+ <a href="#section">    <span></span>
        </a> 
         </div>
     </center>
+    <section id="section">
     <div>
         <center> 
-    <h1 class="spice" id="mirch">#MirchiTohLagegi</h1>
+    <h1 class="spice">#MirchiTohLagegi</h1>
         </center>
     </div>
+    </section>
     <div>
-    <h1 class="what" id="what">What do we do?</h1>
+    <h1 class="what">What do we do?</h1>
         <p class="ncr">As part of the Delhi NCR Tech Circuit, a network of highschool techies, we compete in interschool competitions and more importantly help each other in the circuit. We train grade 6-12 students and help them in achieving new heights. We our known for our expertise in the following fields-
         
         </p>
     </div>
-    <div class="fields">
-    <img src="game.png" class="ga">
-        <img src="Web%20.png" class="web"> 
-        <img src="AR%20(1).png" class="mov">
-        <img src="AR.png" class="aru">
-    </div>
-    <div class="field">
-    <img src="digital.png" class="dig">
-        <img src="motion.png" class="mot" >
-        <img src="space.png" class="spa">
-    </div>
-    <div>
-         <h1>Made With</h1>
-    </div>
+    <div class="grid">
+    <div><img src="game.png" class="ga"></div>
+       <div> <img src="Web%20.png" class="web"></div>
+        <div><img src="AR%20(1).png" class="mov"></div>
+        <div><img src="AR.png" class="aru"></div>
     
-    <script>
-         function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+   <div><img src="digital.png" class="dig"></div>
+      <div><img src="motion.png" class="mot"></div>
+      <div>  <img src="space.png" class="spa">
+</div>    </div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i data-feather="chevron-up" class="up"></i></button>
+<script>
+  feather.replace()
+</script>
+<script>
+  mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
   } else {
-    x.className = "topnav";
+    mybutton.style.display = "none";
   }
-         }
-    </script>
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+</script>
+<footer>
+    <hr color="#098cd7">
+    <p style=" font-family: 'Ubuntu' , cursive; font-size:20px;">
+      &copy; Love from eSpice team 
+       
+    </p>
+</footer>
+
     </body>
     </html>
