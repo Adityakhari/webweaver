@@ -3,6 +3,9 @@ body {
   padding:0px;
   background-color: black;
   }
+html {
+     scroll-behaviour: smooth;
+}
   .topnav {
       overflow: hidden;
       background-color: black;
